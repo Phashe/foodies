@@ -1,4 +1,4 @@
 # foodies
 Foodies app
 
-Thi sis the android studio project
+This is the android studio project
