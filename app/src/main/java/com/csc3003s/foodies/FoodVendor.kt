@@ -12,7 +12,7 @@ class FoodVendor {
         this.waitingTime = waitingTime
     }
 
-    private override fun toString(): String {
+    public override fun toString(): String {
         // Implementation of the ToString() method
         return "Vendor Number: $vendorNumber, Waiting Time: $waitingTime minutes"
     }

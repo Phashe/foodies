@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Foodies</string>
+    <string name="splash_image_description">Foodies Splashscreen</string>
 </resources>
