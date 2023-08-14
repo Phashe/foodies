@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.relay' version '0.3.08'
 }
 
 android {
@@ -29,6 +30,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.csc3003s.foodies'
 }
 
 dependencies {
