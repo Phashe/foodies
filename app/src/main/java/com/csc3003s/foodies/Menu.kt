@@ -1,36 +1,44 @@
+package com.csc3003S.foodies
+
 class Menu {
     private var DietaryRequirements: String? = null
     private var Cuisine: String? = null
-    private val ItemArrayList: ArrayList<Item>? = null
-    fun GetDietaryRequirements(): String? {
-        return DietaryRequirements
-    }
+    private val ItemArrayList: ArrayList<Item> = ArrayList()
 
-    private fun SetDietaryRequirements(dietaryRequirements: String) {
+    constructor(dietaryRequirements: String, cuisine: String) {
         DietaryRequirements = dietaryRequirements
-    }
-
-    fun GetCuisine(): String? {
-        return Cuisine
-    }
-
-    private fun SetCuisine(cuisine: String) {
         Cuisine = cuisine
     }
 
-    fun Add(item: Item) {
-        ItemArrayList!!.add(item)
+    fun getDietaryRequirements(): String? {
+        return DietaryRequirements
     }
 
-    fun Delete(item: Item) {
-        ItemArrayList!!.remove(item)
+    private fun setDietaryRequirements(dietaryRequirements: String) {
+        DietaryRequirements = dietaryRequirements
     }
 
-    fun Update(item: Item?) {
+    fun getCuisine(): String? {
+        return Cuisine
+    }
+
+    private fun setCuisine(cuisine: String) {
+        Cuisine = cuisine
+    }
+
+    fun add(item: Item) {
+        ItemArrayList.add(item)
+    }
+
+    fun delete(item: Item) {
+        ItemArrayList.remove(item)
+    }
+
+    fun update(item: Item?) {
         // Implement the update logic here
     }
 
-    fun ToString(): String {
+    override fun toString(): String {
         return "Menu{" +
                 "DietaryRequirements='" + DietaryRequirements + '\'' +
                 ", Cuisine='" + Cuisine + '\'' +

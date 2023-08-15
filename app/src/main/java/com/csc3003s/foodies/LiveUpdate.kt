@@ -1,29 +1,32 @@
-class LiveUpdate {
-    private var QueueLength = 0
-    private val OurMenu: Menu? = null
-    fun GetQueueLength(): Int {
+package com.csc3003S.foodies
+
+class LiveUpdate(queueLength: Int, ourMenu: Menu) {
+    private var QueueLength = queueLength
+    private val OurMenu: Menu = ourMenu
+
+    fun getQueueLength(): Int {
         return QueueLength
     }
 
-    private fun SetQueueLength(queueLength: Int) {
+    private fun setQueueLength(queueLength: Int) {
         QueueLength = queueLength
     }
 
-    fun GetItemAvailability(): Boolean {
+    fun getItemAvailability(): Boolean {
         // Implement the logic to check item availability
         return false // Placeholder
     }
 
-    fun GetItemPreparedness(): Boolean {
+    fun getItemPreparedness(): Boolean {
         // Implement the logic to check item preparedness
         return false // Placeholder
     }
 
-    fun GetMenu(): String? {
-        return OurMenu!!.ToString()
+    fun getMenu(): String? {
+        return OurMenu?.toString()
     }
 
-    fun ToString(): String {
+    override fun toString(): String {
         return "LiveUpdate{" +
                 "QueueLength=" + QueueLength +
                 ", OurMenu=" + OurMenu +

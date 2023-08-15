@@ -1,67 +1,78 @@
-class Item {
-    private var ItemName: String? = null
-    private val ItemID: String? = null
-    private var ItemAvailability = false
-    private var ItemPrepraredness = false
-    private var ItemDescription: String? = null
-    private var ItemPrice = 0f
-    fun GetItemName(): String? {
-        return ItemName
+package com.csc3003S.foodies
+
+class Item(
+    private var itemName: String?,
+    private val itemID: String?,
+    private var itemAvailability: Boolean = false,
+    private var itemPreparedness: Boolean = false,
+    private var itemDescription: String?,
+    private var itemPrice: Float = 0f
+) {
+    init {
+        if (itemName == null) {
+            throw IllegalArgumentException("Item name cannot be null")
+        }
+
+        if (itemDescription == null) {
+            throw IllegalArgumentException("Item description cannot be null")
+        }
+
+        // You can implement additional initialization logic here
     }
 
-    private fun SetItemName(itemName: String) {
-        ItemName = itemName
+    fun getItemName(): String? {
+        return itemName
     }
 
-    fun GetItemID(): String? {
-        return ItemID
+    fun getItemID(): String? {
+        return itemID
     }
 
-    private fun GenerateItemID(): String? {
+    private fun generateItemID(): String? {
         // Implement the logic to generate an item ID
         return null // Placeholder
     }
 
-    fun GetItemAvailability(): Boolean {
-        return ItemAvailability
+    fun getItemAvailability(): Boolean {
+        return itemAvailability
     }
 
-    private fun SetItemAvailability(itemAvailability: Boolean) {
-        ItemAvailability = itemAvailability
+    fun setItemAvailability(itemAvailability: Boolean) {
+        this.itemAvailability = itemAvailability
     }
 
-    fun GetItemPrepraredness(): Boolean {
-        return ItemPrepraredness
+    fun getItemPreparedness(): Boolean {
+        return itemPreparedness
     }
 
-    private fun SetItemPrepraredness(itemPrepraredness: Boolean) {
-        ItemPrepraredness = itemPrepraredness
+    fun setItemPreparedness(itemPreparedness: Boolean) {
+        this.itemPreparedness = itemPreparedness
     }
 
-    fun GetItemDescription(): String? {
-        return ItemDescription
+    fun getItemDescription(): String? {
+        return itemDescription
     }
 
-    private fun SetItemDescription(itemDescription: String) {
-        ItemDescription = itemDescription
+    fun setItemDescription(itemDescription: String) {
+        this.itemDescription = itemDescription
     }
 
-    fun GetItemPrice(): Float {
-        return ItemPrice
+    fun getItemPrice(): Float {
+        return itemPrice
     }
 
-    private fun SetItemPrice(itemPrice: Float) {
-        ItemPrice = itemPrice
+    fun setItemPrice(itemPrice: Float) {
+        this.itemPrice = itemPrice
     }
 
-    fun ToString(): String {
+    override fun toString(): String {
         return "Items{" +
-                "ItemName='" + ItemName + '\'' +
-                ", ItemID='" + ItemID + '\'' +
-                ", ItemAvailability=" + ItemAvailability +
-                ", ItemPrepraredness=" + ItemPrepraredness +
-                ", ItemDescription='" + ItemDescription + '\'' +
-                ", ItemPrice=" + ItemPrice +
+                "ItemName='$itemName', " +
+                "ItemID='$itemID', " +
+                "ItemAvailability=$itemAvailability, " +
+                "ItemPrepraredness=$itemPreparedness, " +
+                "ItemDescription='$itemDescription', " +
+                "ItemPrice=$itemPrice" +
                 '}'
     }
 }
