@@ -5,7 +5,7 @@ class Student(
     userEmail: String,
     userPassword: String,
     _studentNumber: String,
-    _account: String
+    _points: int
 ) : User(userName, userEmail, userPassword) {
 
     var studentNumber: String = _studentNumber
@@ -14,13 +14,13 @@ class Student(
             field = value
         }
 
-    var account: String = _account
+    var points: String = _account
         get() = field
         set(value) {
             field = value
         }
 
     override fun toString(): String {
-        return "Student{User_Name='$userName', User_Email='$userEmail', StudentNumber='$studentNumber', Account=$account}"
+        return "Student{User_Name='$userName', User_Email='$userEmail', StudentNumber='$studentNumber', Points=$points}"
     }
 }
