@@ -4,6 +4,7 @@ class StaffMember(
     _userName: String,
     _userEmail: String,
     _userPassword: String
+    _point: int
 ) : User(_userName, _userEmail, _userPassword) {
     var staffNumber: String? = null
         private set
@@ -14,10 +15,16 @@ class StaffMember(
         this.staffNumber = staffNumber
     }
 
+    var point: int = _point
+        get() = field
+        set(value) {
+            field = value
+        }
+
     override fun toString(): String {
         return "StaffMember{" +
                 "StaffNumber='$staffNumber', " +
-                "Account=$account" +
+                "Points=$point" +
                 '}'
     }
 }
