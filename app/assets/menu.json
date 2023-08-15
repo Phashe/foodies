@@ -1,0 +1,186 @@
+{
+    "restaurants": [
+      {
+        "name": "Budget Rolls",
+        "DietaryRequirements":"Insert requirements here",
+        "Cuisine":"Insert cuisine here",
+        "menus": [
+          {
+            "key":"#1",
+            "categories": [
+              {
+                "Hot drinks": [
+                  {
+                    "items": [
+                      { "Name": "Filter Coffee", "Price": 18.00 },
+                      { "Name": "Hot Chocolate", "Price": 25.00 },
+                      { "Name": "Chocochino", "Price": 25.00 },
+                      { "Name": "Five Roses Tea", "Price": 10.00 },
+                      { "Name": "Rooibos Tea", "Price": 10.00 },
+                      { "Name": "Chai Latte", "Price": 18.00 }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Campus Cafe",
+        "DietaryRequirements":"Insert requirements here",
+        "Cuisine":"Insert cuisine here",
+        "menus": [
+          {
+            "key":"#2",
+            "categories": [
+              {
+                "Hot drinks": [
+                  {
+                    "items": [
+                      { "Name": "Filter Coffee", "Price": 18.00 },
+                      { "Name": "Hot Chocolate", "Price": 25.00 },
+                      { "Name": "Chocochino", "Price": 25.00 },
+                      { "Name": "Five Roses Tea", "Price": 10.00 },
+                      { "Name": "Rooibos Tea", "Price": 10.00 },
+                      { "Name": "Chai Latte", "Price": 18.00 }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Varsity Foods",
+        "DietaryRequirements":"Insert requirements here",
+        "Cuisine":"Insert cuisine here",
+        "menus": [
+          {
+            "key":"#3",
+            "categories": [
+              {
+                "Hot drinks": [
+                  {
+                    "items": [
+                      { "Name": "Filter Coffee", "Price": 18.00 },
+                      { "Name": "Hot Chocolate", "Price": 25.00 },
+                      { "Name": "Chocochino", "Price": 25.00 },
+                      { "Name": "Five Roses Tea", "Price": 10.00 },
+                      { "Name": "Rooibos Tea", "Price": 10.00 },
+                      { "Name": "Chai Latte", "Price": 18.00 }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Prashad",
+        "DietaryRequirements":"Insert requirements here",
+        "Cuisine":"Insert cuisine here",
+        "menus": [
+          {
+            "key":"#4",
+            "categories": [
+              {
+                "Hot drinks": [
+                  {
+                    "items": [
+                      { "Name": "Filter Coffee", "Price": 18.00 },
+                      { "Name": "Hot Chocolate", "Price": 25.00 },
+                      { "Name": "Chocochino", "Price": 25.00 },
+                      { "Name": "Five Roses Tea", "Price": 10.00 },
+                      { "Name": "Rooibos Tea", "Price": 10.00 },
+                      { "Name": "Chai Latte", "Price": 18.00 }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Afriquezeen",
+        "DietaryRequirements":"Insert requirements here",
+        "Cuisine":"Insert cuisine here",
+        "menus": [
+          {
+            "key":"#5",
+            "categories": [
+              {
+                "Hot drinks": [
+                  {
+                    "items": [
+                      { "Name": "Filter Coffee", "Price": 18.00 },
+                      { "Name": "Hot Chocolate", "Price": 25.00 },
+                      { "Name": "Chocochino", "Price": 25.00 },
+                      { "Name": "Five Roses Tea", "Price": 10.00 },
+                      { "Name": "Rooibos Tea", "Price": 10.00 },
+                      { "Name": "Chai Latte", "Price": 18.00 }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dan's Health Shop",
+        "DietaryRequirements":"Insert requirements here",
+        "Cuisine":"Insert cuisine here",
+        "menus": [
+          {
+            "key":"#6",
+            "categories": [
+              {
+                "Hot drinks": [
+                  {
+                    "items": [
+                      { "Name": "Filter Coffee", "Price": 18.00 },
+                      { "Name": "Hot Chocolate", "Price": 25.00 },
+                      { "Name": "Chocochino", "Price": 25.00 },
+                      { "Name": "Five Roses Tea", "Price": 10.00 },
+                      { "Name": "Rooibos Tea", "Price": 10.00 },
+                      { "Name": "Chai Latte", "Price": 18.00 }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Best Quality",
+        "DietaryRequirements":"Insert requirements here",
+        "Cuisine":"Insert cuisine here",
+        "menus": [
+          {
+            "key":"#7",
+            "categories": [
+              {
+                "Hot drinks": [
+                  {
+                    "items": [
+                      { "Name": "Filter Coffee", "Price": 18.00 },
+                      { "Name": "Hot Chocolate", "Price": 25.00 },
+                      { "Name": "Chocochino", "Price": 25.00 },
+                      { "Name": "Five Roses Tea", "Price": 10.00 },
+                      { "Name": "Rooibos Tea", "Price": 10.00 },
+                      { "Name": "Chai Latte", "Price": 18.00 }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}
