@@ -22,4 +22,8 @@ fun main() {
     println("Customer Service: ${review.getCustomerService()}")
 
     println(review.toString())
+
+    // Example usage
+    val vendor = FoodVendor("John", "john@example.com", "password", "V123", 10, true)
+    println(vendor)
 }
