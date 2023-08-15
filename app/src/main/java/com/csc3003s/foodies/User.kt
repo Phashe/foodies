@@ -1,36 +1,41 @@
-class User {
-    private var User_Name: String? = null
-    private var User_Email: String? = null
-    private var User_Password: String? = null
-    fun GetName(): String? {
-        return User_Name
-    }
+package com.csc3003S.foodies
 
-    private fun SetName(name: String) {
-        User_Name = name
+/*
+open class User(
+    var userName: String,
+    var userEmail: String,
+    var userPassword: String
+) {
+    override fun toString(): String {
+        return "User{User_Name='$userName', User_Email='$userEmail', User_Password='$userPassword'}"
     }
+}
+*/
 
-    fun GetEmail(): String? {
-        return User_Email
-    }
+open class User(
+    _userName: String,
+    _userEmail: String,
+    _userPassword: String
+) {
+    var userName: String = _userName
+        get() = field
+        set(value) {
+            field = value
+        }
 
-    private fun SetEmail(email: String) {
-        User_Email = email
-    }
+    var userEmail: String = _userEmail
+        get() = field
+        set(value) {
+            field = value
+        }
 
-    fun GetPassword(): String? {
-        return User_Password
-    }
+    var userPassword: String = _userPassword
+        get() = field
+        set(value) {
+            field = value
+        }
 
-    private fun SetPassword(password: String) {
-        User_Password = password
-    }
-
-    fun ToString(): String {
-        return "User{" +
-                "User_Name='" + User_Name + '\'' +
-                ", User_Email='" + User_Email + '\'' +
-                ", User_Password='" + User_Password + '\'' +
-                '}'
+    override fun toString(): String {
+        return "User{User_Name='$userName', User_Email='$userEmail'}"
     }
 }

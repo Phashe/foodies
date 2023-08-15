@@ -1,3 +1,5 @@
+package com.csc3003S.foodies
+
 class Account {
     private val ReviewsArrayList: ArrayList<Review>? = null
     var points = 0

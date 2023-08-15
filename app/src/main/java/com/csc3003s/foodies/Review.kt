@@ -1,68 +1,72 @@
-class Review {
-    private var UserName: String? = null
-    private val ReviewID: String? = null
-    private var Comment: String? = null
-    private var StockAvailability = 0
-    private var OrderTime = 0
-    private var Cleanliness = 0
-    private var CustomerService = 0
-    fun GetName(): String? {
-        return UserName
+package com.csc3003S.foodies
+
+class Review(
+    private var userName: String? = null,
+    private val reviewID: String? = null,
+    private var comment: String? = null,
+    private var stockAvailability: Int = 0,
+    private var orderTime: Int = 0,
+    private var cleanliness: Int = 0,
+    private var customerService: Int = 0
+) {
+
+    fun getName(): String? {
+        return userName
     }
 
-    private fun SetName(userName: String) {
-        UserName = userName
+    fun setName(userName: String) {
+        this.userName = userName
     }
 
-    fun GetComment(): String? {
-        return Comment
+    fun getComment(): String? {
+        return comment
     }
 
-    private fun SetComment(comment: String) {
-        Comment = comment
+    fun setComment(comment: String) {
+        this.comment = comment
     }
 
-    fun GetStockAvailability(): Int {
-        return StockAvailability
+    fun getStockAvailability(): Int {
+        return stockAvailability
     }
 
-    private fun SetStockAvailability(stockAvailability: Int) {
-        StockAvailability = stockAvailability
+    fun setStockAvailability(stockAvailability: Int) {
+        this.stockAvailability = stockAvailability
     }
 
-    fun GetOrderTime(): Int {
-        return OrderTime
+    fun getOrderTime(): Int {
+        return orderTime
     }
 
-    private fun SetOrderTime(orderTime: Int) {
-        OrderTime = orderTime
+    fun setOrderTime(orderTime: Int) {
+        this.orderTime = orderTime
     }
 
-    fun GetCleanliness(): Int {
-        return Cleanliness
+    fun getCleanliness(): Int {
+        return cleanliness
     }
 
-    private fun SetCleanliness(cleanliness: Int) {
-        Cleanliness = cleanliness
+    fun setCleanliness(cleanliness: Int) {
+        this.cleanliness = cleanliness
     }
 
-    fun GetCustomerService(): Int {
-        return CustomerService
+    fun getCustomerService(): Int {
+        return customerService
     }
 
-    private fun SetCustomerService(customerService: Int) {
-        CustomerService = customerService
+    fun setCustomerService(customerService: Int) {
+        this.customerService = customerService
     }
 
-    fun ToString(): String {
+    override fun toString(): String {
         return "Review{" +
-                "UserName='" + UserName + '\'' +
-                ", ReviewID='" + ReviewID + '\'' +
-                ", Comment='" + Comment + '\'' +
-                ", StockAvailability=" + StockAvailability +
-                ", OrderTime=" + OrderTime +
-                ", Cleanliness=" + Cleanliness +
-                ", CustomerService=" + CustomerService +
+                "UserName='$userName', " +
+                "ReviewID='$reviewID', " +
+                "Comment='$comment', " +
+                "StockAvailability=$stockAvailability, " +
+                "OrderTime=$orderTime, " +
+                "Cleanliness=$cleanliness, " +
+                "CustomerService=$customerService" +
                 '}'
     }
 }
