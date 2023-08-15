@@ -1,6 +1,7 @@
-class Guest {
-    private val VisitorName: String? = null
-    fun GetVisitorName(): String? {
-        return VisitorName
+package com.csc3003S.foodies
+
+class Guest(private val visitorName: String) {
+    fun getVisitorName(): String {
+        return visitorName
     }
 }
