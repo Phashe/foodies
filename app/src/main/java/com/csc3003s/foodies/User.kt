@@ -1,17 +1,5 @@
 package com.csc3003S.foodies
 
-/*
-open class User(
-    var userName: String,
-    var userEmail: String,
-    var userPassword: String
-) {
-    override fun toString(): String {
-        return "User{User_Name='$userName', User_Email='$userEmail', User_Password='$userPassword'}"
-    }
-}
-*/
-
 open class User(
     _userName: String,
     _userEmail: String,

@@ -1,23 +1,16 @@
-package com.csc3003S.foodies
-
-class StaffMember(
-    _userName: String,
-    _userEmail: String,
-    _userPassword: String
-) : User(_userName, _userEmail, _userPassword) {
+class StaffMember : User{
     var staffNumber: String? = null
-        private set
 
-    private val account: Account? = null
+    private val Account: Account? = null
 
-    fun setStaffNumber(staffNumber: String) {
+    private fun setStaffNumber(staffNumber: String) {
         this.staffNumber = staffNumber
     }
 
     override fun toString(): String {
         return "StaffMember{" +
-                "StaffNumber='$staffNumber', " +
-                "Account=$account" +
+                "StaffNumber='" + staffNumber + '\'' +
+                ", Account=" + Account +
                 '}'
     }
 }
