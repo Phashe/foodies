@@ -29,7 +29,6 @@ fun main() {
     val menu = Menu("Healthy", "Italian")
     val liveUpdate = LiveUpdate(5, menu)
 
-    val item = Item("Burger", "I123", false, true, "A delicious burger", 8.99f,)
-    println(item)
+
 
 }

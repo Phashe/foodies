@@ -36,8 +36,8 @@ class Rewards(
      *
      * @return The menu.
      */
-    override fun getMenu(): Menu {
-        return ourMenu
+    override fun getMenu(): String? {
+        return ourMenu.toString()
     }
 
     /**
