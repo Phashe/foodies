@@ -6,7 +6,7 @@ package com.csc3003S.foodies
  * @property QueueLength The length of the queue.
  * @property OurMenu The menu associated with the live updates.
  */
-class LiveUpdate(queueLength: Int, ourMenu: Menu) {
+open class LiveUpdate(queueLength: Int, ourMenu: Menu) {
     /**
      * The length of the queue.
      */
@@ -22,7 +22,7 @@ class LiveUpdate(queueLength: Int, ourMenu: Menu) {
      *
      * @return The length of the queue.
      */
-    fun getQueueLength(): Int {
+    open fun getQueueLength(): Int {
         return QueueLength
     }
 
@@ -40,7 +40,7 @@ class LiveUpdate(queueLength: Int, ourMenu: Menu) {
      *
      * @return `true` if the item is available, `false` otherwise.
      */
-    fun getItemAvailability(): Boolean {
+    open fun getItemAvailability(): Boolean {
         // Implement the logic to check item availability
         return false // Placeholder
     }
@@ -50,7 +50,7 @@ class LiveUpdate(queueLength: Int, ourMenu: Menu) {
      *
      * @return `true` if the item is prepared, `false` otherwise.
      */
-    fun getItemPreparedness(): Boolean {
+    open fun getItemPreparedness(): Boolean {
         // Implement the logic to check item preparedness
         return false // Placeholder
     }
@@ -60,7 +60,7 @@ class LiveUpdate(queueLength: Int, ourMenu: Menu) {
      *
      * @return A string containing menu details.
      */
-    fun getMenu(): String? {
+    open fun getMenu(): String? {
         return OurMenu?.toString()
     }
 

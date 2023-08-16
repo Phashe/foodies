@@ -16,8 +16,10 @@ class Item(
     private var itemAvailability: Boolean = false,
     private var itemPreparedness: Boolean = false,
     private var itemDescription: String?,
-    private var itemPrice: Float = 0f
-) {
+    private var itemPrice: Float = 0f,
+    menuVal: Menu
+) : LiveUpdate(0, menuVal) {
+
     init {
         if (itemName == null) {
             throw IllegalArgumentException("Item name cannot be null")
@@ -63,7 +65,7 @@ class Item(
      *
      * @return `true` if the item is available, `false` otherwise.
      */
-    fun getItemAvailability(): Boolean {
+    override fun getItemAvailability(): Boolean {
         return itemAvailability
     }
 
@@ -81,7 +83,7 @@ class Item(
      *
      * @return `true` if the item is prepared, `false` otherwise.
      */
-    fun getItemPreparedness(): Boolean {
+    override fun getItemPreparedness(): Boolean {
         return itemPreparedness
     }
 
@@ -129,21 +131,9 @@ class Item(
     fun setItemPrice(itemPrice: Float) {
         this.itemPrice = itemPrice
     }
-
-    /**
-     * Returns a string representation of the Item object.
-     *
-     * @return A string containing item details.
-     */
-    override fun toString(): String {
-        return "Items{" +
-                "ItemName='$itemName', " +
-                "ItemID='$itemID', " +
-                "ItemAvailability=$itemAvailability, " +
-                "ItemPrepraredness=$itemPreparedness, " +
-                "ItemDescription='$itemDescription', " +
-                "ItemPrice=$itemPrice" +
-                '}'
-    }
 }
-
+/**
+ * Returns a string representation of the Item object.
+ *
+ * @return A string containing item details.
+ */
