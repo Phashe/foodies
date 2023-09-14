@@ -32,6 +32,7 @@ fun VendorLoginPage(navController: NavController){
             modifier = Modifier.padding(innerPadding)
         ) {
             VendorLoginPageContent(navController=navController)
+            //
         }
     }
 }
