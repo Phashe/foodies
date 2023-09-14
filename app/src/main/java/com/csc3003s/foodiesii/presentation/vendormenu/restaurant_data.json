@@ -1,0 +1,13 @@
+{
+  "name": "Budget Rolls",
+  "dietaryRequirements": "Vegetarian",
+  "cuisine": "Asian Fusion",
+  "items": [
+    { "name": "Filter Coffee", "price": 18.00 },
+    { "name": "Hot Chocolate", "price": 25.00 },
+    { "name": "Chocochino", "price": 25.00 },
+    { "name": "Five Roses Tea", "price": 10.00 },
+    { "name": "Rooibos Tea", "price": 10.00 },
+    { "name": "Chai Latte", "price": 18.00 }
+  ]
+}
