@@ -66,7 +66,7 @@ class SignUpActivity : AppCompatActivity() {
                     // If sign up fails, display a message to the user.
                     Toast.makeText(this, "Sign up failed. Please try again.", Toast.LENGTH_SHORT).show()
                 }
-            }
+            }//
        /* var user: MutableMap<String, Any> = HashMap()
 
         user["Email"] = UserEmail
