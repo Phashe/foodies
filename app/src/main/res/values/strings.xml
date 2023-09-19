@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Foodies</string>
+    <string name="button">Sign UP</string>
+    <string name="textview">Name</string>
+</resources>
