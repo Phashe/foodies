@@ -44,7 +44,7 @@ fun InventoryNavHost(
 ) {
     NavHost(
         navController = navController,
-        startDestination = VendorAdminDestination.route,
+        startDestination = HomeDestination.route,
         modifier = modifier
     ) {
 
@@ -63,6 +63,7 @@ fun InventoryNavHost(
                 }
             )
         }
+        
         composable(route = ItemEntryDestination.route) {
             ItemEntryScreen(
                 navigateBack = { navController.popBackStack() },
