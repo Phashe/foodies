@@ -70,6 +70,7 @@ object HomeDestination : NavigationDestination {
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun HomeScreen(
+    navigateBack: () -> Unit,
     navigateToItemEntry: () -> Unit,
     navigateToItemUpdate: (Int) -> Unit,
     modifier: Modifier = Modifier,
@@ -176,6 +177,10 @@ private fun InventoryItem(
                 text = stringResource(R.string.prepreparedness, item.prepreparedness),
                 style = MaterialTheme.typography.titleMedium
             )
+            Text(
+                text = stringResource(R.string.availability, item.availability),
+                style = MaterialTheme.typography.titleMedium
+            )
         }
     }
 }
@@ -185,7 +190,7 @@ private fun InventoryItem(
 fun HomeBodyPreview() {
     InventoryTheme {
         HomeBody(listOf(
-            Item(1, "Game", 100.0, true), Item(2, "Pen", 200.0, true), Item(3, "TV", 300.0, false)
+            Item(1, "Game", 100.0, true, false), Item(2, "Pen", 200.0, true,true), Item(3, "TV", 300.0, false,true)
         ), onItemClick = {})
     }
 }
@@ -203,7 +208,7 @@ fun HomeBodyEmptyListPreview() {
 fun InventoryItemPreview() {
     InventoryTheme {
         InventoryItem(
-            Item(1, "Game", 100.0, true),
+            Item(1, "Game", 100.0, true, true),
         )
     }
 }

@@ -35,4 +35,13 @@
     <string name="sell">Sell</string>
     <string name="yes">Yes</string>
     <string name="required_fields">*required fields</string>
+    <string name="availability">Availability</string>
+    <string name="vendor_admin">Vendor Admin</string>
+    <string name="manage_menu">Manage Menu</string>
+    <string name="read_reviews">Read Reviews</string>
+    <string name="logout">Logout</string>
+    <string name="exit">Exit</string>
+    
+
+    
 </resources>

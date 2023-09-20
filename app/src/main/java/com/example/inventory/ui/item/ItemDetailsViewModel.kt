@@ -45,7 +45,7 @@ class ItemDetailsViewModel(
         itemsRepository.getItemStream(itemId)
             .filterNotNull()
             .map {
-                ItemDetailsUiState(prepreparedness = it.prepreparedness, itemDetails = it.toItemDetails())
+                ItemDetailsUiState(prepreparedness = it.prepreparedness, availability = it.availability, itemDetails = it.toItemDetails())
             }.stateIn(
                 scope = viewModelScope,
                 started = SharingStarted.WhileSubscribed(TIMEOUT_MILLIS),
@@ -69,5 +69,7 @@ class ItemDetailsViewModel(
  */
 data class ItemDetailsUiState(
     val prepreparedness: Boolean = true,
+    val availability: Boolean = true,
     val itemDetails: ItemDetails = ItemDetails()
+
 )

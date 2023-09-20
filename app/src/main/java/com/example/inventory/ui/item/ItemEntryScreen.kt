@@ -18,6 +18,8 @@ package com.example.inventory.ui.item
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
@@ -166,15 +168,36 @@ fun ItemInputForm(
             singleLine = true
         )
 
+        //CheckBoxPrepreparednessView(itemDetails)
+
+        
+        Text(text = stringResource(R.string.availability))
+        Spacer(modifier = Modifier.weight(1f))
         Checkbox(
-            checked = itemDetails.prepreparedness,
+            checked = itemDetails.availability,
             onCheckedChange = { newCheckedState ->
-                itemDetails.copy(prepreparedness = newCheckedState)
+                //itemDetails.copy(availability = newCheckedState)
+                itemDetails.availability = newCheckedState
             },
             modifier = Modifier.padding(8.dp),
             colors = CheckboxDefaults.colors(MaterialTheme.colorScheme.primary)
         )
+  
 
+        
+        Text(text = stringResource(R.string.prepreparedness))
+        Spacer(modifier = Modifier.weight(1f))
+        Checkbox(
+            checked = itemDetails.prepreparedness,
+            onCheckedChange = { newCheckedState ->
+                //itemDetails.copy(prepreparedness = newCheckedState)
+                itemDetails.prepreparedness = newCheckedState
+            },
+            modifier = Modifier.padding(8.dp),
+            colors = CheckboxDefaults.colors(MaterialTheme.colorScheme.primary)
+        )
+     
+        //CheckBoxAvailableView(itemDetails)
 
         if (enabled) {
             Text(
@@ -185,13 +208,26 @@ fun ItemInputForm(
     }
 }
 
+/**
+@Composable
+fun CheckBoxAvailableView(){
+    
+}
+
+@Composable
+fun CheckBoxPrepreparednessView(){
+    
+}
+**/
+
+
 @Preview(showBackground = true)
 @Composable
 private fun ItemEntryScreenPreview() {
     InventoryTheme {
         ItemEntryBody(itemUiState = ItemUiState(
             ItemDetails(
-                name = "Item name", price = "10.00", prepreparedness = true
+                name = "Item name", price = "10.00", prepreparedness = true, availability = true
             )
         ), onItemValueChange = {}, onSaveClick = {})
     }

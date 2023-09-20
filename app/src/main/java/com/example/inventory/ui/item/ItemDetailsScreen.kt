@@ -181,6 +181,17 @@ fun ItemDetails(
                     )
                 )
             )
+           
+            ItemDetailsRow(
+                labelResID = R.string.price,
+                itemDetail = item.formatedPrice(),
+                modifier = Modifier.padding(
+                    horizontal = dimensionResource(
+                        id = R.dimen
+                            .padding_medium
+                    )
+                )
+            )
             ItemDetailsRow(
                 labelResID = R.string.prepreparedness,
                 itemDetail = item.prepreparedness.toString(),
@@ -192,8 +203,8 @@ fun ItemDetails(
                 )
             )
             ItemDetailsRow(
-                labelResID = R.string.price,
-                itemDetail = item.formatedPrice(),
+                labelResID = R.string.availability,
+                itemDetail = item.availability.toString(),
                 modifier = Modifier.padding(
                     horizontal = dimensionResource(
                         id = R.dimen
@@ -242,7 +253,7 @@ private fun DeleteConfirmationDialog(
 fun ItemDetailsScreenPreview() {
     InventoryTheme {
         ItemDetailsBody(ItemDetailsUiState(
-            prepreparedness = true, itemDetails = ItemDetails(1, "Pen", "$100", true)
+            prepreparedness = true, itemDetails = ItemDetails(1, "Pen", "$100", true,true)
         ),  onDelete = {})
     }
 }
