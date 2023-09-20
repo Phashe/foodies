@@ -44,7 +44,7 @@ fun InventoryNavHost(
 ) {
     NavHost(
         navController = navController,
-        startDestination = HomeDestination.route,
+        startDestination = VendorAdminDestination.route,
         modifier = modifier
     ) {
 
