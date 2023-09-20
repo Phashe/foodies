@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/venda" />
 
     <EditText
-        android:id="@+id/vendorNumber"
+        android:id="@+id/vendorEmail"
         android:layout_width="347dp"
         android:layout_height="97dp"
         android:ems="10"
@@ -34,12 +34,12 @@
         app:layout_constraintVertical_bias="0.534" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/vendorPassword"
         android:layout_width="347dp"
         android:layout_height="97dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="number"
+        android:inputType="textPassword"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

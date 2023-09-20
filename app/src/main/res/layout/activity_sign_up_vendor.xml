@@ -24,7 +24,7 @@
         android:layout_height="115dp"
         android:ems="10"
         android:hint="Store Name"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
         android:layout_height="115dp"
         android:ems="10"
         android:hint="Vendor Number"
-        android:inputType="number"
+        android:inputType="textEmailAddress"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.794" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/vendorButton"
         android:layout_width="256dp"
         android:layout_height="71dp"

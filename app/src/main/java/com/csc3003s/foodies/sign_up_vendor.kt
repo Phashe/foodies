@@ -36,6 +36,7 @@ class sign_up_vendor : AppCompatActivity() {
                 saveToDataBase(store, vendorPassword)
                 // start Vendor Option activity
                 val logInIntent = Intent(this, VendorActivity::class.java)
+                Toast.makeText(applicationContext, "signed up successfully", Toast.LENGTH_LONG).show()
                 startActivity(logInIntent)
             }
         }

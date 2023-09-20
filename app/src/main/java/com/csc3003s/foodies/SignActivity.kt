@@ -31,18 +31,27 @@ class SignActivity : AppCompatActivity() {
            val getPassword = password.text.toString()
             //val getEmail = "Ndzimande@gmail.com".trim()
             //val getPassword = "456".trim()
+            val string = getEmail.split("@")
+            val  extention = string[1]
+
 
             auth.signInWithEmailAndPassword(getEmail,getPassword)
                 .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        // Login successful, user is signed in
-                        val logInIntent = Intent(this, VendorActivity::class.java)
-                        startActivity(logInIntent)
-                        val user = auth.currentUser
-                        // Proceed with Firestore data access or other actions
-                    } else {
-                        // Login failed, handle the error
-                        Toast.makeText(this, "Authentication failed.", Toast.LENGTH_SHORT).show()
+                    if(extention.equals("myuct.ac.za")) {
+                        if (task.isSuccessful) {
+                            // Login successful, user is signed in
+                            val logInIntent = Intent(this, VendorActivity::class.java)
+                            startActivity(logInIntent)
+                            val user = auth.currentUser
+                            // Proceed with Firestore data access or other actions
+                        } else {
+                            // Login failed, handle the error
+                            Toast.makeText(this, "Authentication failed.", Toast.LENGTH_SHORT)
+                                .show()
+                        }
+
+                    }else{
+                        Toast.makeText(this, "please enter UCT email", Toast.LENGTH_SHORT).show()
                     }
                 }
 
