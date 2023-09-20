@@ -45,24 +45,12 @@ class ItemDetailsViewModel(
         itemsRepository.getItemStream(itemId)
             .filterNotNull()
             .map {
-                ItemDetailsUiState(outOfStock = it.quantity <= 0, itemDetails = it.toItemDetails())
+                ItemDetailsUiState(prepreparedness = it.prepreparedness, itemDetails = it.toItemDetails())
             }.stateIn(
                 scope = viewModelScope,
                 started = SharingStarted.WhileSubscribed(TIMEOUT_MILLIS),
                 initialValue = ItemDetailsUiState()
             )
-
-    /**
-     * Reduces the item quantity by one and update the [ItemsRepository]'s data source.
-     */
-    fun reduceQuantityByOne() {
-        viewModelScope.launch {
-            val currentItem = uiState.value.itemDetails.toItem()
-            if (currentItem.quantity > 0) {
-                itemsRepository.updateItem(currentItem.copy(quantity = currentItem.quantity - 1))
-            }
-        }
-    }
 
     /**
      * Deletes the item from the [ItemsRepository]'s data source.
@@ -80,6 +68,6 @@ class ItemDetailsViewModel(
  * UI state for ItemDetailsScreen
  */
 data class ItemDetailsUiState(
-    val outOfStock: Boolean = true,
+    val prepreparedness: Boolean = true,
     val itemDetails: ItemDetails = ItemDetails()
 )
