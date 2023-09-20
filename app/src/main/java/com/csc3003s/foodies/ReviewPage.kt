@@ -20,7 +20,7 @@ class ReviewPage : AppCompatActivity() {
 
         // my submit button
         val subButton = findViewById<Button>(R.id.submitR)
-
+//
 
 
 

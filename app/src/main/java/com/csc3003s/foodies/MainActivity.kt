@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//
+//ivCustomer
         var ivCustomer = findViewById<ImageView>(R.id.customer)
         ivCustomer.setOnClickListener(){
             var customerIntent = Intent(this,Customer::class.java)
