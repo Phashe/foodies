@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1245" />
+        <entry key="app/src/main/res/drawable/myview.xml" value="0.1615" />
+        <entry key="app/src/main/res/layout/activity_best_quality.xml" value="0.1213768115942029" />
+        <entry key="app/src/main/res/layout/activity_best_quality_m.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_budget_rolls.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_campus_cafe.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_customer.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/activity_dan.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_guest.xml" value="0.12001811594202899" />
+        <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.2259963768115942" />
+        <entry key="app/src/main/res/layout/activity_line_length.xml" value="0.1213768115942029" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1894630192502533" />
+        <entry key="app/src/main/res/layout/activity_prashad.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_qrcode.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/activity_sign.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_sign_up_vendor.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_varsity_fast_food.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_venda_reviews.xml" value="0.12907608695652173" />
+        <entry key="app/src/main/res/layout/activity_vendor.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_vendor2.xml" value="0.1526268115942029" />
+        <entry key="app/src/main/res/layout/activity_vendor_options.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_vendor_review.xml" value="0.1213768115942029" />
+        <entry key="app/src/main/res/layout/activity_vendor_sign_in.xml" value="0.12907608695652173" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
