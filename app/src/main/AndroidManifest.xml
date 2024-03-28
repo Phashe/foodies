@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.csc3003s.foodies">
-
-    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Permission for camera -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -15,6 +16,84 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Foodies">
+        <activity
+            android:name=".varsityFastFoodMenuItem"
+            android:exported="false" />
+        <activity
+            android:name=".varsityFastFoodMenu"
+            android:exported="false" />
+        <activity
+            android:name=".budget_rolls"
+            android:exported="false" />
+        <activity
+            android:name=".best_quality"
+            android:exported="false" />
+        <activity
+            android:name=".budgetRollsMenuItem"
+            android:exported="false" />
+        <activity
+            android:name=".budgetRollsMenu"
+            android:exported="false" />
+        <activity
+            android:name=".bestQualityMenuItem"
+            android:exported="false" />
+        <activity
+            android:name=".bestQualityMenu"
+            android:exported="false" />
+        <activity
+            android:name=".uRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VRecycleView"
+            android:exported="false" />
+        <activity
+            android:name=".VRecyclerReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vendorVarsityFastFood"
+            android:exported="false" />
+        <activity
+            android:name=".vendorBestQuality"
+            android:exported="false" />
+        <activity
+            android:name=".vendorCampusCafe"
+            android:exported="false" />
+        <activity
+            android:name=".vendorPrashad"
+            android:exported="false" />
+        <activity
+            android:name=".vendorDans"
+            android:exported="false" />
+        <activity
+            android:name=".vendorBudgetRolls"
+            android:exported="false" />
+        <activity
+            android:name=".rewardsPage"
+            android:exported="false" />
+        <activity
+            android:name=".userIndiComments"
+            android:exported="false" />
+        <activity
+            android:name=".RealTimeComments"
+            android:exported="false" />
+        <activity
+            android:name=".VendorsCommentPage"
+            android:exported="false" />
+        <activity
+            android:name=".GuestsCommentPage"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerCommentsPage"
+            android:exported="false" />
+        <activity
+            android:name=".AllUsersComments"
+            android:exported="false" />
         <activity
             android:name=".QRCodeScan"
             android:exported="false" />
@@ -64,12 +143,6 @@
             android:name=".campus_cafe"
             android:exported="false" />
         <activity
-            android:name=".budget_rolls"
-            android:exported="false" />
-        <activity
-            android:name=".best_quality"
-            android:exported="false" />
-        <activity
             android:name=".varsity_fast_food"
             android:exported="false" />
         <activity
@@ -80,9 +153,6 @@
             android:exported="false" />
         <activity
             android:name=".SignActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeScreen"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

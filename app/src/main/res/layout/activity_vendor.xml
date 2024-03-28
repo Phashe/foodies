@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_700"
+    android:background="#2F4C95"
     tools:context=".VendorActivity">
 
     <GridLayout
@@ -18,22 +18,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <androidx.cardview.widget.CardView
             android:layout_height="0dp"
             android:layout_width="0dp"
             app:cardCornerRadius="15dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:backgroundTint="#7AAACF">
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
                 <ImageView
                     android:id="@+id/varsity_food"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/vasirtyfood"
-                    android:layout_centerInParent="true"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/vasirtyfood" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -42,16 +45,18 @@
             app:cardCornerRadius="15dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:backgroundTint="#7AAACF">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:id="@+id/best_quality"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/best_quality"
-                    android:layout_centerInParent="true"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/best_quality" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -60,7 +65,8 @@
             app:cardCornerRadius="15dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:backgroundTint="#7AAACF">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -78,16 +84,18 @@
             app:cardCornerRadius="15dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:backgroundTint="#7AAACF">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:id="@+id/campus_cafe"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/campus_cafe"
-                    android:layout_centerInParent="true"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/campus_cafe" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -96,7 +104,8 @@
             app:cardCornerRadius="15dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:backgroundTint="#7AAACF">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -114,7 +123,8 @@
             app:cardCornerRadius="15dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:backgroundTint="#7AAACF">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -125,10 +135,9 @@
                     android:src="@drawable/prashad"
                     android:layout_centerInParent="true"/>
             </RelativeLayout>
+
         </androidx.cardview.widget.CardView>
 
-
     </GridLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

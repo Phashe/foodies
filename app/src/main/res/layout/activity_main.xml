@@ -22,6 +22,7 @@
             android:layout_centerHorizontal="true"
             android:text="Foodies"
             android:textSize="70dp"
+            android:textColor="@color/purple_200"
             android:textStyle="bold" />
 
         <ImageView

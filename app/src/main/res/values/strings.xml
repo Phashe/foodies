@@ -2,4 +2,8 @@
     <string name="app_name">Foodies</string>
     <string name="button">Sign UP</string>
     <string name="textview">Name</string>
+
+    <string name="toggle_flash">Toggle Flash</string>
+    <string name="action_settings">Settings</string>
+    <string name="scanned_data">Scanned Data</string>
 </resources>

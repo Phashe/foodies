@@ -9,12 +9,12 @@ class budget_rolls : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_budget_rolls)
-        // Clicking the review image
+
         var reviewsIcon = findViewById<ImageView>(R.id.reviews3)
         reviewsIcon.setOnClickListener(){
 
             // Opening reading or writing Screen
-            var reviewsOptionsOpen = Intent(this,ReviewOrRead::class.java)
+            var reviewsOptionsOpen = Intent(this,RecyclerViewActivity::class.java)
             startActivity(reviewsOptionsOpen)
 
         }

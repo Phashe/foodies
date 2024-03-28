@@ -28,7 +28,8 @@
         app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.614" />
+        app:layout_constraintVertical_bias="0.614"
+        android:backgroundTint="@color/purple_200"/>
 
     <Button
         android:id="@+id/signUpCustomer"
@@ -40,5 +41,6 @@
         app:layout_constraintHorizontal_bias="0.935"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613" />
+        app:layout_constraintVertical_bias="0.613"
+        android:backgroundTint="@color/purple_200"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

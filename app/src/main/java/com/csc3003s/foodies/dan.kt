@@ -14,7 +14,7 @@ class dan : AppCompatActivity() {
         reviewsIcon.setOnClickListener(){
 
             // Opening reading or writing Screen
-            var reviewsOptionsOpen = Intent(this,ReviewOrRead::class.java)
+            var reviewsOptionsOpen = Intent(this,RecyclerViewActivity::class.java)
             startActivity(reviewsOptionsOpen)
 
         }
